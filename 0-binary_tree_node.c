@@ -3,15 +3,15 @@
  * binary_tree_node - create new node in the binary tree
  *
  * @parent: parent of the new node in the tree
- * @value: size of array
+ * @value: node value
  * Return: return new node or null if creation fail
  */
-
+void binary_tree_print (binary_tree_t *root);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new_node;
 
-	new_node = malloc(sizeof(binary_tree_s));
+	new_node = malloc(sizeof(binary_tree_t));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->n = value;
@@ -19,4 +19,15 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	new_node->right = NULL;
 	new_node->parent = parent;
 	return  (new_node);
+}
+int main(void)
+{
+    binary_tree_t *root;
+
+    root = binary_tree_node(NULL, 98);
+    root->left = binary_tree_node(root, 12);
+    root->right = binary_tree_node(root, 402);
+    binary_tree_print(root);
+	
+	return (0);
 }
