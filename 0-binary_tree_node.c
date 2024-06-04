@@ -20,14 +20,3 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	new_node->parent = parent;
 	return  (new_node);
 }
-int main(void)
-{
-    binary_tree_t *root;
-
-    root = binary_tree_node(NULL, 98);
-    root->left = binary_tree_node(root, 12);
-    root->right = binary_tree_node(root, 402);
-    binary_tree_print(root);
-	
-	return (0);
-}
