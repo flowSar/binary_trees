@@ -3,7 +3,7 @@
  * binary_tree_depth - calculate the depth of the tree
  *
  * @tree: root of the tree
- * Return: height of the tree
+ * Return: depth of the tree
  */
 int traverse_tree_backward(const binary_tree_t *tree);
 size_t binary_tree_depth(const binary_tree_t *tree)
