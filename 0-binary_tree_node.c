@@ -6,7 +6,7 @@
  * @value: node value
  * Return: return new node or null if creation fail
  */
-void binary_tree_print (binary_tree_t *root);
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new_node;
