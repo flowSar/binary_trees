@@ -9,10 +9,12 @@
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
+	int right, left;
+
 	if (tree == NULL)
 		return (0);
-	int right = traverse_right_tree(tree);
-	int left = traverse_left_tree(tree);
+	right = traverse_right_tree(tree);
+	left = traverse_left_tree(tree);
 
 	return (left - right);
 }
