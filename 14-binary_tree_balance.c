@@ -27,7 +27,7 @@ int binary_tree_balance(const binary_tree_t *tree)
  */
 int traverse_left_tree(const binary_tree_t *tree)
 {
-	int node_num = 0;
+	int node_num;
 
 	if (tree == NULL)
 		return (0);
@@ -44,7 +44,7 @@ int traverse_left_tree(const binary_tree_t *tree)
  */
 int traverse_right_tree(const binary_tree_t *tree)
 {
-	int node_num = 0;
+	int node_num;
 
 	if (tree == NULL)
 		return (0);
