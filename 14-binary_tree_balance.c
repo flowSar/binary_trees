@@ -1,4 +1,6 @@
 #include "binary_trees.h"
+int traverse_left_tree(const binary_tree_t *tree);
+int traverse_right_tree(const binary_tree_t *tree);
 /**
  * binary_tree_balance - calculate balance of power number of chldren
  * for each parent
