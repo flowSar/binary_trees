@@ -38,8 +38,6 @@ binary_tree_t *traverse_tree_backward(const binary_tree_t *first,
 
 	if (first == NULL || second == NULL)
 		return (NULL);
-	else if (first == second)
-		return (NULL);
 	else if (first->parent == second->parent)
 		return (first->parent);
 	ancestor = traverse_tree_backward(first->parent, second);
