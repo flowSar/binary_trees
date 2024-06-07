@@ -10,8 +10,8 @@ int traverse_right_tree(const binary_tree_t *tree, int number);
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int left;
-	int right;
+	int left = 0;
+	int right = 0;
 
 	left = traverse_left_tree(tree, 0);
 	right =  traverse_right_tree(tree, 0);
