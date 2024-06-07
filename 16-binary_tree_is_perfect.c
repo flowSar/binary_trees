@@ -12,7 +12,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int left = 0;
 	int right = 0;
-
+	
+	if (tree == NULL)
+		return (0);
 	left = traverse_left_tree(tree, 0);
 	right =  traverse_right_tree(tree, 0);
 	if (left == right)
